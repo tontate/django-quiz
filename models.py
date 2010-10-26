@@ -1,6 +1,8 @@
 from django.db import models
 from datetime import datetime
 # Create your models here.
+
+
 class Quiz(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
@@ -46,5 +48,4 @@ class MultipleChoice(models.Model):
 
     def __unicode__(self):
         return self.question.title
-
 

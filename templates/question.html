@@ -1,0 +1,8 @@
+<form>
+<p><b>{{ question.title }}:</b></p>
+<ol type="A" >
+{% for m in answers %}
+    <li><input type=radio id="{{ m.id }}" name="data[test]" value="{{ m.id }}" /><label for="{{ m.id }}">{{ m.answer }}</label></li>
+{% endfor %}
+ </ol>
+</form>
